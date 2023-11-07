@@ -1,0 +1,30 @@
+Gradient descent is an iterative optimization algorithm used to minimize a function, particularly in machine learning and deep learning,
+
+
+CODE EXPLANATION
+
+x is initialized to 2, which is the starting point for the optimization.
+
+lr (learning rate) is set to 0.01. The learning rate determines the step size for each iteration.
+
+precision is set to 0.000001. It represents the threshold for stopping the optimization when the step size becomes smaller than this value.
+
+previous_step_size is initialized to 1. This variable is used to track the step size in each iteration.
+
+max_iter is set to 10000, which limits the number of iterations to prevent the loop from running indefinitely.
+
+iters is initialized to 0 and is used as a counter to keep track of the number of iterations.
+
+gf is a lambda function that defines the gradient (derivative) of the function you want to minimize. 
+In this case, it's the gradient of (x + 3)^2.
+
+The while loop runs as long as both the step size is greater than the precision and the number of iterations is less than max_iter.
+
+Inside the loop:
+
+prev stores the previous value of x.
+x is updated using gradient descent: x = x - lr * gf(prev). 
+This step is where the algorithm tries to find a better value for x to minimize the function.
+previous_step_size is updated to the absolute difference between the new x and the previous x.
+iters is incremented to keep track of the number of iterations.
+The iteration number and the current value of x are printed.
