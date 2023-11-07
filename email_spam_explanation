@@ -1,0 +1,19 @@
+a.	pandas for data manipulation.
+b.	train_test_split for splitting the dataset into training and testing sets.
+c.	SVC (Support Vector Classifier) from scikit-learn for training a Support Vector Machine (SVM) model.
+d.	accuracy_score for evaluating the accuracy of the classifier.
+e.	KNeighborsClassifier for training a k-nearest neighbors (KNN) classifier.
+f.	matplotlib.pyplot for data visualization
+
+4.	Loading a dataset from a CSV file named "emails.csv" into a Pandas DataFrame (df).
+5.	Displaying the first few rows of the dataset using df.head().
+6.	Checking for missing values in the dataset using df.isnull().sum().
+7.	Splitting the dataset into features (X) and the target variable (Y). 
+In this case, it's assumed that the last column of the DataFrame contains the target values.
+
+8.	Using train_test_split to split the dataset into training and testing sets for both SVM and KNN models.
+9.	Training an SVM (Support Vector Machine) classifier with the radial basis function (RBF) kernel on the training data. It is configured with specific hyperparameters (C, kernel, and gamma).
+10.	Making predictions on the test data using the trained SVM model and calculating the accuracy of the model.
+11.	Training a KNN (k-nearest neighbors) classifier with 7 neighbors on the training data.
+12.	Making predictions on the test data using the KNN classifier and printing the predictions.
+13.	Calculating the accuracy of the KNN classifier using the score method.
