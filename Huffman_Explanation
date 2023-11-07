@@ -1,0 +1,14 @@
+The MinHeapNode structure represents a node in the Huffman tree. 
+It stores the character (symbol), its frequency, and pointers to its left and right children.
+
+The printCodes function recursively traverses the Huffman tree and prints the binary code for each symbol. 
+It takes a root node and a string representing the code built so far.
+
+The compare structure is a custom comparator used for the priority queue. 
+It ensures that nodes with lower frequencies have higher priority in the queue.
+
+The HuffmanCode function takes the symbols, their frequencies, and the size as input and constructs the Huffman tree. 
+It uses a priority queue (minHeap) to build the tree. It repeatedly pops the two nodes with the lowest frequencies from the queue, creates a new internal node with the sum of their frequencies, and pushes it back into the queue until only one node (the root of the Huffman tree) remains.
+
+In the main function, you define an array of characters data and an array of corresponding frequencies freq. 
+You then call the HuffmanCode function to construct the Huffman tree and print the Huffman codes for the symbols in your example.
