@@ -1,0 +1,17 @@
+N Queen =  no two queens can share the same row, column, or diagonal.
+
+The time complexity of the N-Queens problem using backtracking is typically represented as O(N!),
+where N is the number of queens and the size of the chessboard.
+
+The space complexity of the N-Queens problem using backtracking depends on the data structures used to represent the chessboard .
+The space complexity is O(N^2) to store the N×N chessboard.
+
+CODE EXPLANATION:
+
+The print_solution function is responsible for printing the chessboard with queen placements. 
+
+The is_safe function checks whether it's safe to place a queen at a specific position
+
+The solve_n_queens function uses recursive backtracking to find valid queen placements
+
+The n_queens function initializes an empty chessboard and begins the solving process by calling solve_n_queens
