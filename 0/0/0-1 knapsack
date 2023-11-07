@@ -1,0 +1,30 @@
+The 0/1 Knapsack problem is a classic optimization problem
+
+It is also known as the 0/1 Knapsack constraint because you must make binary (0 or 1) decisions about whether to include items in a knapsack with limited capacity.
+
+Here's a formal description of the 0/1 Knapsack problem:
+You have a set of items, each with a weight (w) and a value (v).
+You have a knapsack with a limited weight capacity (W).
+You can choose to either include or exclude each item (0/1 choice).
+The objective is to select items to maximize the total value while keeping the total weight below or equal to the knapsack's capacity.
+
+
+
+CODE EXPLANATION
+
+You define the knapsack's capacity, the number of items, and arrays to store the prices and weights of the items.
+
+You create a 2D array dp to store the results of subproblems. 
+
+dp[i][j] will represent the maximum profit that can be obtained with the first i items and a knapsack of capacity j.
+
+If i is 0 (no items) or j is 0 (no capacity), the maximum profit is 0.
+
+If the weight of the current item (wt[i]) is less than or equal to the current capacity (j), you have two choices:
+1. Exclude the current item and take the maximum profit from the previous row, i.e., dp[i-1][j].
+2. nclude the current item and add its price to the maximum profit of the remaining capacity, i.e., price[i] + dp[i-1][j-wt[i]]
+
+You select the maximum of these two options as the value for dp[i][j].
+
+If the weight of the current item is greater than the current capacity, you can't include the item, 
+so you use the maximum profit from the previous row, i.e., dp[i-1][j].
