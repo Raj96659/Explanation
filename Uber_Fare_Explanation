@@ -1,0 +1,35 @@
+Imports necessary libraries and loads the Uber dataset from a CSV file named "uber.csv" into a Pandas DataFrame:
+
+Libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Datetime are imported.
+The warnings are filtered to ignore them.
+Converts the "pickup_datetime" column to the required datetime format.
+
+Displays information about the DataFrame, including data types and non-null counts for each column.
+
+Describes the statistical properties of the dataset using describe().
+
+Checks for missing values in the DataFrame using isnull().sum() and drops rows with missing values using dropna().
+
+Calculates the correlation between variables using corr().
+
+Creates a boxplot for the "fare_amount" column to visualize its distribution.
+
+Removes outliers from the "fare_amount" column by applying a filter based on quantiles.
+
+Checks for missing values in the DataFrame again.
+
+Prepares the data for modeling:
+
+Separates the predictor variables x (excluding "fare_amount") and the target variable y.
+Converts the "pickup_datetime" column to numeric format.
+Selects only columns with names containing "Unnamed."
+Splits the data into training and testing sets using train_test_split from scikit-learn.
+
+Applies linear regression and random forest regression models to the data and evaluates the performance of these models:
+
+Creates a linear regression model (lrmodel) and fits it to the training data.
+Makes predictions with the linear regression model.
+Calculates the root mean squared error (RMSE) for the linear regression model.
+Creates a random forest regression model (rfrmodel) with 100 estimators and fits it to the training data.
+Makes predictions with the random forest regression model.
+Calculates the RMSE for the random forest model.
