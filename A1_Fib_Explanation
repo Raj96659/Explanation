@@ -1,0 +1,15 @@
+Fibonacci - The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.
+
+Time Complexity: O(2^n) (because algorithm recalculates same fibonacci number multiple times)
+Space Complexity: O(n) (due to the recursion call stack)
+
+Recursion - Recursion is a programming technique where a function calls itself in order to solve a problem.
+
+CODE EXPLANATION........
+
+int fnum is a global variable used to count the number of steps
+
+The fib_num function is a recursive function that takes an integer n as its argument
+
+
+
