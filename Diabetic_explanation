@@ -1,0 +1,40 @@
+pandas for data manipulation.
+numpy for numerical operations.
+sklearn.metrics for various classification metrics.
+StandardScaler from scikit-learn for feature scaling.
+train_test_split from scikit-learn for splitting the dataset into training and testing sets.
+KNeighborsClassifier for creating and training the KNN classifier.
+Loads a dataset from a CSV file named "diabetes.csv" into a Pandas DataFrame (df).
+
+Displays the DataFrame to inspect its contents.
+
+Checks the shape of the DataFrame using df.shape to get the number of rows and columns.
+
+Checks for missing values in the DataFrame and counts the columns with missing values.
+
+Extracts the features (input variables) from the DataFrame df_x by dropping the "Outcome" column, which is assumed to be the target variable. The target variable is stored in df_y.
+
+Applies feature scaling using the StandardScaler to scale the feature values to have zero mean and unit variance. Feature scaling is often essential for KNN and other distance-based algorithms.
+
+Splits the dataset into training and testing sets using train_test_split. 80% of the data is used for training (x_train and y_train), and 20% for testing (x_test and y_test).
+
+Creates a KNN classifier with 7 neighbors and fits it to the training data.
+
+Makes predictions on the test data using the trained KNN classifier.
+
+Calculates and prints various classification metrics:
+
+Confusion matrix (cs) using metrics.confusion_matrix.
+Accuracy score (ac) using metrics.accuracy_score.
+Error rate (er) as 1 minus the accuracy.
+Precision (p) using metrics.precision_score.
+Recall (r) using metrics.recall_score.
+Classification report (cr) using metrics.classification_report, which provides a summary of several classification metrics.
+This code provides a comprehensive analysis of the KNN classifier's performance, making it easier to evaluate the model's effectiveness for the diabetes dataset.
+
+
+
+
+
+
+Regenerate
