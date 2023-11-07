@@ -1,0 +1,18 @@
+In Fractional Knapsack problem, we have a set of items with different weights and values and a knapsack with a limited weight capacity.  
+The goal is to maximize the total value of the items that can be placed in the knapsack.
+
+Time complexity = O(n log n) due to the sorting step, where 'n' is the number of items.
+Space complexity = O(n) (depends on data structure in our case list is data structure).
+CODE EXPLANATION.....
+
+The fractional_knapsack function takes a list of items and the knapsack's capacity as input.
+
+It calculates the value-to-weight ratio for each item, sorts the items in descending order of this ratio, 
+and then iteratively adds items to the knapsack until the knapsack is full.
+
+It returns the total value, a list of selected items with their fractions, and the execution time of the algorithm.
+
+The main part of your code gathers input from the user for the number of items, their weights, and values, and then calls the fractional_knapsack function.
+
+Finally, your code calculates and prints the maximum value obtained, the selected items and their fractions, and the execution time of the algorithm.
+
